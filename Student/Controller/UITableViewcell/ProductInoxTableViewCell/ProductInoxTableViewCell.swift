@@ -22,12 +22,6 @@ class ProductInoxTableViewCell: UITableViewCell {
     @IBOutlet weak private var phoneNumberLabel: UILabel!
     
     weak var delegate: ProductInoxTableViewCellDelegate?
-    
-    let productionName = "Tên sản phẩm: "
-    let kindInox = "Loại Inox: "
-    let production = "Số lượng: "
-    let price = "Giá: "
-    let phoneNumber = "01202647700"
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -46,11 +40,10 @@ class ProductInoxTableViewCell: UITableViewCell {
     //MARK: Configure
     
     func configureTableViewCell() {
-        
-        productNameLabel.text = NSString(format: productionName, locale: nil) as String
-        kindInoxLabel.text = NSString(format: kindInox, locale: nil) as String
-        priceLabel.text = NSString(format: price, locale: nil) as String
-        productionLabel.text = NSString(format: production, locale: nil) as String
-        phoneNumberLabel.text = NSString(format: phoneNumber, locale: nil) as String
+        productNameLabel.text = NSString(format: Strings.productionName, locale: nil) as String
+        kindInoxLabel.text = NSString(format: Strings.kindInox, locale: nil) as String
+        priceLabel.text = NSString(format: Strings.price, locale: nil) as String
+        productionLabel.text = NSString(format: Strings.production, locale: nil) as String
+        phoneNumberLabel.text = NSString(format: Strings.phoneNumber, locale: nil) as String
     }
 }

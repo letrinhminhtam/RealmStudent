@@ -9,9 +9,10 @@
 import UIKit
 
 class Strings {
-    let home = "Home"
-    let production = "Tên sản phẩm: "
-    let kindInox = "Loại Inox: "
-    let price = "Số lượng: "
-    let phoneNumber = "Giá: "
+    static let home = "Home"
+    static let productionName = "Tên sản phẩm: "
+    static let kindInox = "Loại Inox: "
+    static let production = "Số lượng: "
+    static let price = "Giá: "
+    static let phoneNumber = "Call: 01202647700"
 }
