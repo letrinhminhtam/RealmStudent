@@ -19,10 +19,10 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmk-nr-YLX">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZ3-bQ-sQD">
-                            <rect key="frame" x="8" y="17" width="80" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZ3-bQ-sQD">
+                            <rect key="frame" x="8" y="21" width="68" height="30"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="80" id="C1j-NY-csi"/>
+                                <constraint firstAttribute="width" constant="68" id="C1j-NY-csi"/>
                                 <constraint firstAttribute="height" constant="30" id="HH1-Ec-m8P"/>
                             </constraints>
                             <state key="normal" title="Back"/>
@@ -30,8 +30,16 @@
                                 <action selector="backButton:" destination="-1" eventType="touchUpInside" id="SDQ-6i-OeJ"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csy-NK-Lv9">
+                            <rect key="frame" x="305" y="21" width="62" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="62" id="7BG-VG-8PR"/>
+                                <constraint firstAttribute="height" constant="30" id="npw-8p-mWW"/>
+                            </constraints>
+                            <state key="normal" title="Add"/>
+                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sản Phẩm Inox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHQ-Zr-z73">
-                            <rect key="frame" x="114" y="14" width="146" height="35"/>
+                            <rect key="frame" x="114" y="18" width="146" height="35"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="35" id="Ry9-a0-cUz"/>
                                 <constraint firstAttribute="width" constant="146" id="ZXy-W2-8hI"/>
@@ -43,9 +51,11 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="IHQ-Zr-z73" firstAttribute="centerY" secondItem="lmk-nr-YLX" secondAttribute="centerY" id="BR5-gb-8IW"/>
-                        <constraint firstAttribute="bottom" secondItem="mZ3-bQ-sQD" secondAttribute="bottom" constant="17" id="QH2-P7-kKx"/>
+                        <constraint firstAttribute="trailing" secondItem="csy-NK-Lv9" secondAttribute="trailing" constant="8" id="2zd-zQ-sLQ"/>
+                        <constraint firstItem="IHQ-Zr-z73" firstAttribute="centerY" secondItem="lmk-nr-YLX" secondAttribute="centerY" constant="3.5" id="BR5-gb-8IW"/>
+                        <constraint firstAttribute="bottom" secondItem="mZ3-bQ-sQD" secondAttribute="bottom" constant="13" id="QH2-P7-kKx"/>
                         <constraint firstItem="IHQ-Zr-z73" firstAttribute="centerX" secondItem="lmk-nr-YLX" secondAttribute="centerX" id="mUW-iz-yUN"/>
+                        <constraint firstAttribute="bottom" secondItem="csy-NK-Lv9" secondAttribute="bottom" constant="13" id="mdR-om-Oql"/>
                         <constraint firstItem="mZ3-bQ-sQD" firstAttribute="leading" secondItem="lmk-nr-YLX" secondAttribute="leading" constant="8" id="nKf-Hc-57a"/>
                         <constraint firstAttribute="height" constant="64" id="sbV-fp-GW3"/>
                     </constraints>

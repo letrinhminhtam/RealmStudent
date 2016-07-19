@@ -68,13 +68,18 @@ extension ProductInoxViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 5
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let productCell = tableView.dequeueReusableCellWithIdentifier(cell) as! ProductInoxTableViewCell
         productCell.delegate = self
+        productCell.configureTableViewCell()
         return productCell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("did select row")
     }
 }
 

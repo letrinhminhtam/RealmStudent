@@ -10,4 +10,8 @@ import UIKit
 
 class Strings {
     let home = "Home"
+    let production = "Tên sản phẩm: "
+    let kindInox = "Loại Inox: "
+    let price = "Số lượng: "
+    let phoneNumber = "Giá: "
 }
