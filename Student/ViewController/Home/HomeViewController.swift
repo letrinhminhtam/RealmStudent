@@ -17,4 +17,9 @@ class HomeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func productInox(sender: AnyObject) {
+        let productInoxViewController = ProductInoxViewController()
+        navigationController?.pushViewController(productInoxViewController, animated: true)
+    }
 }

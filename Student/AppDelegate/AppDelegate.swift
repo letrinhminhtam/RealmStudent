@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        let navi:UINavigationController = UINavigationController(rootViewController: homeVC);
+        let navi:UINavigationController = UINavigationController(rootViewController: homeVC)
+        navi.navigationBarHidden = true
         window?.backgroundColor = UIColor.whiteColor()
         window?.rootViewController = navi
         window?.makeKeyAndVisible()
@@ -44,7 +45,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         
     }
-
-
 }
 
