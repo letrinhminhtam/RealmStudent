@@ -8,7 +8,8 @@
 
 import UIKit
 
-let name = "ProductInoxTableViewCell"
+let productInoxtableViewCell = "ProductInoxTableViewCell"
+let cell = "Cell"
 
 class ProductInoxViewController: UIViewController {
     
@@ -52,11 +53,16 @@ class ProductInoxViewController: UIViewController {
     
     //MARK: -Register
     func registerTableView() {
-        tableView.registerNib(UINib(nibName: name, bundle: nil), forCellReuseIdentifier: "Cell")
+        tableView.registerNib(UINib(nibName: productInoxtableViewCell, bundle: nil), forCellReuseIdentifier: cell)
     }
 }
 
 extension ProductInoxViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 126
+    }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -66,7 +72,14 @@ extension ProductInoxViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! ProductInoxTableViewCell
-        return cell
+        let productCell = tableView.dequeueReusableCellWithIdentifier(cell) as! ProductInoxTableViewCell
+        productCell.delegate = self
+        return productCell
+    }
+}
+
+extension ProductInoxViewController: ProductInoxTableViewCellDelegate {
+    func callPhoneTableViewCell(callPhoneCell: ProductInoxTableViewCell) {
+        print("Call Phone")
     }
 }

@@ -19,12 +19,6 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmk-nr-YLX">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Inox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHQ-Zr-z73">
-                            <rect key="frame" x="123" y="14" width="129" height="35"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZ3-bQ-sQD">
                             <rect key="frame" x="8" y="17" width="80" height="30"/>
                             <constraints>
@@ -36,16 +30,24 @@
                                 <action selector="backButton:" destination="-1" eventType="touchUpInside" id="SDQ-6i-OeJ"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sản Phẩm Inox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHQ-Zr-z73">
+                            <rect key="frame" x="114" y="14" width="146" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Ry9-a0-cUz"/>
+                                <constraint firstAttribute="width" constant="146" id="ZXy-W2-8hI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="IHQ-Zr-z73" firstAttribute="top" secondItem="lmk-nr-YLX" secondAttribute="top" constant="14" id="Pr6-RA-PKo"/>
+                        <constraint firstItem="IHQ-Zr-z73" firstAttribute="centerY" secondItem="lmk-nr-YLX" secondAttribute="centerY" id="BR5-gb-8IW"/>
                         <constraint firstAttribute="bottom" secondItem="mZ3-bQ-sQD" secondAttribute="bottom" constant="17" id="QH2-P7-kKx"/>
-                        <constraint firstItem="IHQ-Zr-z73" firstAttribute="leading" secondItem="lmk-nr-YLX" secondAttribute="leading" constant="123" id="Rri-kX-C3a"/>
-                        <constraint firstAttribute="bottom" secondItem="IHQ-Zr-z73" secondAttribute="bottom" constant="15" id="hTe-pS-eM5"/>
+                        <constraint firstItem="IHQ-Zr-z73" firstAttribute="centerX" secondItem="lmk-nr-YLX" secondAttribute="centerX" id="mUW-iz-yUN"/>
                         <constraint firstItem="mZ3-bQ-sQD" firstAttribute="leading" secondItem="lmk-nr-YLX" secondAttribute="leading" constant="8" id="nKf-Hc-57a"/>
                         <constraint firstAttribute="height" constant="64" id="sbV-fp-GW3"/>
-                        <constraint firstAttribute="trailing" secondItem="IHQ-Zr-z73" secondAttribute="trailing" constant="123" id="xyn-ga-uVB"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uS7-5n-OFh">
