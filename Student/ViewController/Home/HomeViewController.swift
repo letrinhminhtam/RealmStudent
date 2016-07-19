@@ -18,6 +18,8 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    //MARK: -Button
+    
     @IBAction func productInox(sender: AnyObject) {
         let productInoxViewController = ProductInoxViewController()
         navigationController?.pushViewController(productInoxViewController, animated: true)

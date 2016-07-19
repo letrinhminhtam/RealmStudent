@@ -11,6 +11,8 @@
 		8F35541F1D3DE03500971FB0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F35541D1D3DE03500971FB0 /* HomeViewController.xib */; };
 		8F3554231D3DE10D00971FB0 /* ProductInoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3554211D3DE10D00971FB0 /* ProductInoxViewController.swift */; };
 		8F3554241D3DE10D00971FB0 /* ProductInoxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F3554221D3DE10D00971FB0 /* ProductInoxViewController.xib */; };
+		8F3554281D3DE91600971FB0 /* ProductInoxTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3554261D3DE91600971FB0 /* ProductInoxTableView.swift */; };
+		8F3554291D3DE91600971FB0 /* ProductInoxTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F3554271D3DE91600971FB0 /* ProductInoxTableView.xib */; };
 		8F50B27F1D3DC1CF004B8AA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F50B27E1D3DC1CF004B8AA1 /* Assets.xcassets */; };
 		8F50B2821D3DC1CF004B8AA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F50B2801D3DC1CF004B8AA1 /* LaunchScreen.storyboard */; };
 		8F50B28D1D3DC1D0004B8AA1 /* StudentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50B28C1D3DC1D0004B8AA1 /* StudentTests.swift */; };
@@ -44,6 +46,8 @@
 		8F35541D1D3DE03500971FB0 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		8F3554211D3DE10D00971FB0 /* ProductInoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInoxViewController.swift; sourceTree = "<group>"; };
 		8F3554221D3DE10D00971FB0 /* ProductInoxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductInoxViewController.xib; sourceTree = "<group>"; };
+		8F3554261D3DE91600971FB0 /* ProductInoxTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInoxTableView.swift; sourceTree = "<group>"; };
+		8F3554271D3DE91600971FB0 /* ProductInoxTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductInoxTableView.xib; sourceTree = "<group>"; };
 		8F50B2741D3DC1CE004B8AA1 /* Student.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Student.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F50B27E1D3DC1CF004B8AA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F50B2811D3DC1CF004B8AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 		8F3554191D3DDFA800971FB0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8F3554251D3DE8EC00971FB0 /* ProductInoxTableView */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -148,6 +153,15 @@
 				8F3554221D3DE10D00971FB0 /* ProductInoxViewController.xib */,
 			);
 			path = ProductInox;
+			sourceTree = "<group>";
+		};
+		8F3554251D3DE8EC00971FB0 /* ProductInoxTableView */ = {
+			isa = PBXGroup;
+			children = (
+				8F3554261D3DE91600971FB0 /* ProductInoxTableView.swift */,
+				8F3554271D3DE91600971FB0 /* ProductInoxTableView.xib */,
+			);
+			path = ProductInoxTableView;
 			sourceTree = "<group>";
 		};
 		8F50B26B1D3DC1CC004B8AA1 = {
@@ -337,6 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3554291D3DE91600971FB0 /* ProductInoxTableView.xib in Resources */,
 				8F3554241D3DE10D00971FB0 /* ProductInoxViewController.xib in Resources */,
 				8F50B2821D3DC1CF004B8AA1 /* LaunchScreen.storyboard in Resources */,
 				8F50B27F1D3DC1CF004B8AA1 /* Assets.xcassets in Resources */,
@@ -417,6 +432,7 @@
 				8F50B2AA1D3DC235004B8AA1 /* AppDelegate.swift in Sources */,
 				8F50B2B01D3DC272004B8AA1 /* Strings.swift in Sources */,
 				8F35541E1D3DE03500971FB0 /* HomeViewController.swift in Sources */,
+				8F3554281D3DE91600971FB0 /* ProductInoxTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
