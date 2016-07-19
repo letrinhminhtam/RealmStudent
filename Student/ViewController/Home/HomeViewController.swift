@@ -18,6 +18,18 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    //MARK: Set Up UI
+    
+    private func setUpUI() {
+        
+    }
+    
+    //MARK: Set Up Data
+    
+    private func setUpData() {
+        
+    }
+    
     //MARK: -Button
     
     @IBAction func productInox(sender: AnyObject) {

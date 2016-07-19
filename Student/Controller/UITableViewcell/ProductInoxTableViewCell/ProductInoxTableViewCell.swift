@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProductInoxTableView: UITableViewCell {
+class ProductInoxTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
