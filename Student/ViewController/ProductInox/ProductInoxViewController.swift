@@ -79,6 +79,8 @@ extension ProductInoxViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let productInfo = ProductInformationViewController()
+        navigationController?.pushViewController(productInfo, animated: true)
         print("did select row")
     }
 }

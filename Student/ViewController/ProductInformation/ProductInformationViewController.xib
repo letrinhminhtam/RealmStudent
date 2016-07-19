@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductInformationViewController" customModule="Student" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYh-ya-vBo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thông Tin Sản Phẩm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gc4-UU-XW2">
+                            <rect key="frame" x="108" y="25" width="159" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="5DF-LB-Ve4"/>
+                                <constraint firstAttribute="width" constant="159" id="YvQ-rK-9d9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbV-vy-zAg">
+                            <rect key="frame" x="8" y="21" width="55" height="30"/>
+                            <state key="normal" title="Back"/>
+                            <connections>
+                                <action selector="backProductInoxButton:" destination="-1" eventType="touchUpInside" id="2pg-wJ-94f"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Gc4-UU-XW2" firstAttribute="centerY" secondItem="eYh-ya-vBo" secondAttribute="centerY" constant="3.5" id="IhJ-Kr-uA3"/>
+                        <constraint firstItem="Gc4-UU-XW2" firstAttribute="centerX" secondItem="eYh-ya-vBo" secondAttribute="centerX" id="KaC-qI-3XK"/>
+                        <constraint firstAttribute="height" constant="64" id="N2g-a3-FNM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eYh-ya-vBo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JYb-Xl-p9c"/>
+                <constraint firstAttribute="trailing" secondItem="eYh-ya-vBo" secondAttribute="trailing" id="dZf-mt-Yql"/>
+                <constraint firstItem="eYh-ya-vBo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="irP-AI-vkf"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="260.5" y="356.5"/>
+        </view>
+    </objects>
+</document>
